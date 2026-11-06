@@ -2,6 +2,8 @@
 
 手机端 AI Agent 宿主。**网页版 AI 负责推理，手机本地作为工具执行环境。**
 
+**[下载 APK](https://github.com/sqdqzy/AgentDeck/releases/latest)** · Android 8.0+（minSdk 26）· 免 root，Shizuku 为可选增强
+
 AgentDeck 把 13 个主流 AI 网站收敛成一个「站点卡片」网格。点击任意卡片进入一个**纯网页**会话页——
 网页自己的顶部栏、消息列表、输入框、按钮全部原样保留，App 不叠加任何界面，唯一叠加的是一个
 48dp 的可拖动圆形悬浮按钮和一行状态提示。Agent 在后台以 `<tool_call>` XML 协议驱动网页模型，

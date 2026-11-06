@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- See backup_rules.xml: the include list already excludes the database. -->
 <data-extraction-rules>
     <cloud-backup>
         <include domain="file" path="agent-workspace" />
-        <exclude domain="database" path="agentdeck.db" />
     </cloud-backup>
     <device-transfer>
         <include domain="file" path="agent-workspace" />

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  Only the agent workspace is backed up. The database stays out on purpose: it
+  holds site adapters, calibrated selectors and the audit log, all of which
+  describe this device. Listing it under <exclude> is redundant once an
+  <include> list exists, and lint rejects an exclusion that falls outside every
+  included path.
+-->
 <full-backup-content>
     <include domain="file" path="agent-workspace" />
-    <exclude domain="database" path="agentdeck.db" />
 </full-backup-content>

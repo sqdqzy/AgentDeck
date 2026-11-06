@@ -30,6 +30,15 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
             )
+            // Signed with the same key as the debug build, on purpose.
+            //
+            // The app keeps every site's login session inside its private
+            // directory. Android refuses an update whose signature differs,
+            // so a separate release key would force a reinstall - and a
+            // reinstall wipes those sessions and every calibrated selector,
+            // sending the user back through nine logins. One key keeps the
+            // published APK an in-place upgrade.
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
 
