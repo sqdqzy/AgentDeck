@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Debug only manifest.
+
+  It adds the receiver that triggers a deliberate crash so the error window
+  can be verified on a real device. It is merged into debug builds only.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <receiver
+            android:name=".core.DebugCrashReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.agentdeck.action.DEBUG_CRASH" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

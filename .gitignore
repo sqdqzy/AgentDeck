@@ -1,0 +1,35 @@
+# Build output
+.gradle/
+.kotlin/
+build/
+app/build/
+app/release/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local machine paths: the SDK location differs per machine.
+local.properties
+
+# IDE
+.idea/
+*.iml
+*.hprof
+
+# Signing material must never be committed.
+*.jks
+*.keystore
+keystore.properties
+
+# Verification run artifacts: screenshots and captured page dumps are
+# produced by tools-verify and are reproducible, not source.
+verify-shots/
+tools-verify/verify-shots/
+tools-verify/out/
+
+# Workspace metadata for the assistant, not part of the project.
+.workbuddy/
+
+# OS noise
+.DS_Store
+Thumbs.db

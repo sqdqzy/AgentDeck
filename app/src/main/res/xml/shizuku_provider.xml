@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Shizuku provider configuration.
+
+  The ShizukuProvider authority is fixed per application id and cannot be
+  declared inside a provider configuration XML, so this file carries the
+  supporting metadata that the app reads at runtime:
+
+    * shizukuAuthoritySuffix - the suffix appended to the application id to
+      form the ContentProvider authority. It MUST stay in sync with the
+      <provider> declaration in AndroidManifest.xml (${applicationId}.shizuku).
+    * shizukuRequiredApi     - minimum Shizuku service API level AgentDeck
+      relies on.
+    * shizukuProviderClass   - the provider implementation that must be
+      declared in the manifest.
+
+  The app asserts at runtime that the manifest and this file agree and
+  degrades to "Shizuku not authorized" if they diverge.
+-->
+<shizuku-provider xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:shizukuAuthoritySuffix=".shizuku"
+    app:shizukuRequiredApi="13"
+    app:shizukuProviderClass="rikka.shizuku.ShizukuProvider" />

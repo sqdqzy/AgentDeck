@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AgentDeck</string>
+    <string name="home_title">Agent Deck</string>
+    <string name="settings_title">设置</string>
+    <string name="risk_acknowledge">我已知晓</string>
+    <string name="new_card">新建卡片</string>
+</resources>

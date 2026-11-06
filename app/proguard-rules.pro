@@ -1,0 +1,4 @@
+-keep class rikka.shizuku.** { *; }
+-keep class moe.shizuku.** { *; }
+-keep class com.agentdeck.data.db.** { *; }
+-dontwarn rikka.shizuku.**

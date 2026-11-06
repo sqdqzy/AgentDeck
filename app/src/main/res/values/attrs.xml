@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Attributes for res/xml/shizuku_provider.xml.
+
+      The Shizuku ContentProvider authority must match the declaration in
+      AndroidManifest.xml (${applicationId}.shizuku). The manifest supports
+      build-time placeholder substitution, plain XML resources do not, so the
+      authority is stored here as a suffix and the full authority is resolved
+      at runtime.
+    -->
+    <attr name="shizukuAuthoritySuffix" format="string" />
+    <attr name="shizukuRequiredApi" format="integer" />
+    <attr name="shizukuProviderClass" format="string" />
+</resources>

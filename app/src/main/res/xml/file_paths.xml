@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Paths exposed by the FileProvider.
+
+  The log file is written into the app's external files directory under
+  Downloads, which is what LogExporter uses on Android 9 and below. On
+  Android 10+ the file is written through MediaStore and no provider is
+  needed, but the declaration stays so the behaviour is identical on both.
+-->
+<paths>
+    <external-files-path
+        name="external_logs"
+        path="Download/" />
+    <files-path
+        name="internal_logs"
+        path="crash-logs/" />
+</paths>
